@@ -13,4 +13,7 @@ I have only tested (ish) with a single device that controls a millivolt propane 
 
 ## Potential improvements
 
+- [ ] Add an icon :)
+- [ ] Switch always_update to false for better performance?
+- [ ] Handle token expiration better
 - [ ] Switch `integration_type` from `device` to `hub` to support multiple devices? Or can multiple config entries support this automatically?
