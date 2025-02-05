@@ -1,0 +1,17 @@
+{
+    "domain": "luxtherm",
+    "name": "Lux Geo Thermostat",
+    "codeowners": ["@stgarrity"],
+    "config_flow": true,
+    "dependencies": ["application_credentials"],
+    "documentation": "https://github.com/stgarrity/homeassistant-luxtherm",
+    "homekit": {},
+    "integration_type": "device",
+    "issue_tracker": "https://github.com/stgarrity/homeassistant-luxtherm/issues",
+    "iot_class": "cloud_polling",
+    "quality_scale": "bronze",
+    "requirements": ["aiohttp==3.11.11", "pkce==1.0.3", "luxgeo==0.1.0"],
+    "ssdp": [],
+    "version": "0.0.1",
+    "zeroconf": []
+  }
