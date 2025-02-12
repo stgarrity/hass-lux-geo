@@ -13,6 +13,6 @@
     "quality_scale": "bronze",
     "requirements": ["aiohttp==3.11.12", "pkce==1.0.3", "luxgeo==0.1.0"],
     "ssdp": [],
-    "version": "0.0.1",
+    "version": "0.0.2",
     "zeroconf": []
   }
