@@ -6,6 +6,7 @@
     "dependencies": ["application_credentials"],
     "documentation": "https://github.com/stgarrity/homeassistant-luxtherm",
     "homekit": {},
+    "icon": "mdi:thermostat",
     "integration_type": "device",
     "issue_tracker": "https://github.com/stgarrity/homeassistant-luxtherm/issues",
     "iot_class": "cloud_polling",
