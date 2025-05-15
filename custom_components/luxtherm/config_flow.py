@@ -39,7 +39,7 @@ async def validate_input(hass: HomeAssistant, data: dict[str, Any]) -> dict[str,
     # If you cannot connect:
     # throw CannotConnect
 
-    api = LuxAPI(tokens)
+    api = LuxAPI(data[CONF_USERNAME], data[CONF_PASSWORD], tokens)
 
     # FIXME refactor
     try:

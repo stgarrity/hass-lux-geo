@@ -23,16 +23,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: LuxThermConfigEntry) -> 
 
     # lazy login if we just did it and already have tokens
     tokens = entry.data["tokens"]
-    if not tokens:
-        tokens = await login(entry.data[CONF_USERNAME], entry.data[CONF_PASSWORD])
-
-    # FIXME better reauth logic
-    api = LuxAPI(tokens)
-
-    u = await api.get_user()
-    if u.get("statusCode") == 401:
-        tokens = await login(entry.data[CONF_USERNAME], entry.data[CONF_PASSWORD])
-        api = LuxAPI(tokens)
+    api = LuxAPI(entry.data[CONF_USERNAME], entry.data[CONF_PASSWORD], tokens)
 
     entry.runtime_data = api
 
